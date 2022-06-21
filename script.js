@@ -21,3 +21,30 @@ document.querySelector('#user-icon').onclick = () =>{
     search.classList.remove('active');
     cart.classList.remove('active');
 }
+
+
+      var swiper = new Swiper(".new-arrival", {
+        spaceBetween: 20,
+        loop:true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        centeredSlides:true,
+
+        breakpoints:{
+            0:{
+                slidesPerView:0,
+            },
+            568:{
+                slidesPerView:2,
+            },
+            768:{
+                slidesPerView:2,
+            },
+            1020:{
+                slidesPerView:3,
+            },
+        },
+      })
